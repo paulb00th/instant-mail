@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InstantMailViewController : UIViewController
+@interface InstantMailViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 @end

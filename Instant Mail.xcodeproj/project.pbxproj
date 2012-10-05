@@ -23,6 +23,7 @@
 		DA096A9B161D86A100185403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A76161D86A100185403 /* Foundation.framework */; };
 		DA096AA3161D86A100185403 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA096AA1161D86A100185403 /* InfoPlist.strings */; };
 		DA096AA6161D86A100185403 /* Instant_MailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA096AA5161D86A100185403 /* Instant_MailTests.m */; };
+		DAA3486C161DC248005ED1F8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA3486B161DC248005ED1F8 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		DA096AA2161D86A100185403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA096AA4161D86A100185403 /* Instant_MailTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instant_MailTests.h; sourceTree = "<group>"; };
 		DA096AA5161D86A100185403 /* Instant_MailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instant_MailTests.m; sourceTree = "<group>"; };
+		DAA3486B161DC248005ED1F8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA3486C161DC248005ED1F8 /* MessageUI.framework in Frameworks */,
 				DA096A75161D86A100185403 /* UIKit.framework in Frameworks */,
 				DA096A77161D86A100185403 /* Foundation.framework in Frameworks */,
 				DA096A79161D86A100185403 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		DA096A65161D86A100185403 = {
 			isa = PBXGroup;
 			children = (
+				DAA3486B161DC248005ED1F8 /* MessageUI.framework */,
 				DA096A7A161D86A100185403 /* Instant Mail */,
 				DA096A9E161D86A100185403 /* Instant MailTests */,
 				DA096A73161D86A100185403 /* Frameworks */,
@@ -447,6 +451,7 @@
 				DA096AAB161D86A100185403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA096AAC161D86A100185403 /* Build configuration list for PBXNativeTarget "Instant MailTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +460,7 @@
 				DA096AAE161D86A100185403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
