@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InstantMailViewController : UIViewController <MFMailComposeViewControllerDelegate>
+#import "IASKAppSettingsViewController.h"
+
+@interface InstantMailViewController : UIViewController <MFMailComposeViewControllerDelegate, IASKSettingsDelegate>
+
+@property (nonatomic, retain) IASKAppSettingsViewController *appSettingsViewController;
 
 @end
