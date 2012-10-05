@@ -19,7 +19,17 @@
 
 - (void)viewDidLoad
 {
-    [self displayComposerSheet];
+    [self setDefaultSettings];
+    
+    if (self.recipient == @"")
+    {
+        NSLog(@"User needs to set preferences");
+    }
+    else
+    {
+        [self displayComposerSheet];
+    }
+    
     [super viewDidLoad];
 }
 
@@ -28,13 +38,35 @@
     [super didReceiveMemoryWarning];
 }
 
+-(void)setDefaultSettings
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSDictionary *appDefaults =
+        @{ @"recipient_preference" : @"",
+           @"prefix_preference" : @"[Note] " };
+    
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
+}
+
+-(NSString *)recipient
+{
+    return [[NSUserDefaults standardUserDefaults] stringForKey:(@"recipient_preference")];
+}
+
+-(NSString *)prefix
+{
+    return [[NSUserDefaults standardUserDefaults] stringForKey:(@"prefix_preference")];
+}
+
 -(void)displayComposerSheet
 {
     MFMailComposeViewController *mailComposer = [[MFMailComposeViewController alloc] init];
     mailComposer.mailComposeDelegate = self;
     
-    [mailComposer setToRecipients:@[@"test@paulbooth.com"]];
-    [mailComposer setSubject:@"[NOTE] "];
+    [mailComposer setToRecipients:@[self.recipient]];
+    [mailComposer setSubject:self.prefix];
     [mailComposer setMessageBody:@"" isHTML:NO];
     [mailComposer setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
 

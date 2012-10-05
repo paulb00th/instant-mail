@@ -24,6 +24,7 @@
 		DA096AA3161D86A100185403 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA096AA1161D86A100185403 /* InfoPlist.strings */; };
 		DA096AA6161D86A100185403 /* Instant_MailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA096AA5161D86A100185403 /* Instant_MailTests.m */; };
 		DAA3486C161DC248005ED1F8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA3486B161DC248005ED1F8 /* MessageUI.framework */; };
+		DABDF2B9161F00C900200939 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DABDF2B8161F00C900200939 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		DA096AA4161D86A100185403 /* Instant_MailTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instant_MailTests.h; sourceTree = "<group>"; };
 		DA096AA5161D86A100185403 /* Instant_MailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instant_MailTests.m; sourceTree = "<group>"; };
 		DAA3486B161DC248005ED1F8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DABDF2B8161F00C900200939 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				DA096A83161D86A100185403 /* InstantMailAppDelegate.h */,
 				DA096A84161D86A100185403 /* InstantMailAppDelegate.m */,
 				DA096A8C161D86A100185403 /* MainStoryboard.storyboard */,
+				DABDF2B8161F00C900200939 /* Settings.bundle */,
 				DA096A8F161D86A100185403 /* InstantMailViewController.h */,
 				DA096A90161D86A100185403 /* InstantMailViewController.m */,
 				DA096A7B161D86A100185403 /* Supporting Files */,
@@ -241,6 +244,7 @@
 				DA096A89161D86A100185403 /* Default@2x.png in Resources */,
 				DA096A8B161D86A100185403 /* Default-568h@2x.png in Resources */,
 				DA096A8E161D86A100185403 /* MainStoryboard.storyboard in Resources */,
+				DABDF2B9161F00C900200939 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
