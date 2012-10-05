@@ -89,11 +89,12 @@
     [self presentViewController:settingsController animated:YES completion:nil];
 }
 
+#pragma mark -
+#pragma mark MFMailComposeViewControllerDelegate protocol
+
 -(void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
-    [self dismissViewControllerAnimated:YES completion:^(void){
-        [self displayComposerSheet];
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -
