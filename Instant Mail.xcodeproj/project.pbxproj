@@ -46,6 +46,8 @@
 		DAFF33E2161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib */; };
 		DAFF33E3161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CE161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib */; };
 		DAFF33E4161F193A0092D06F /* IASKSpecifierValuesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CF161F193A0092D06F /* IASKSpecifierValuesView.xib */; };
+		DAFF33EB161F316E0092D06F /* app_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33EA161F316E0092D06F /* app_icon_114.png */; };
+		DAFF33ED161F31CF0092D06F /* app_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33EC161F31CF0092D06F /* app_icon_57.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		DAFF33CD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSTextFieldSpecifierViewCell.xib; sourceTree = "<group>"; };
 		DAFF33CE161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSToggleSwitchSpecifierViewCell.xib; sourceTree = "<group>"; };
 		DAFF33CF161F193A0092D06F /* IASKSpecifierValuesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKSpecifierValuesView.xib; sourceTree = "<group>"; };
+		DAFF33EA161F316E0092D06F /* app_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_114.png; sourceTree = "<group>"; };
+		DAFF33EC161F31CF0092D06F /* app_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_57.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 		DA096A65161D86A100185403 = {
 			isa = PBXGroup;
 			children = (
+				DAFF33EC161F31CF0092D06F /* app_icon_57.png */,
+				DAFF33EA161F316E0092D06F /* app_icon_114.png */,
 				DAA3486B161DC248005ED1F8 /* MessageUI.framework */,
 				DA096A7A161D86A100185403 /* Instant Mail */,
 				DA096A9E161D86A100185403 /* Instant MailTests */,
@@ -384,6 +390,8 @@
 				DAFF33E2161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib in Resources */,
 				DAFF33E3161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */,
 				DAFF33E4161F193A0092D06F /* IASKSpecifierValuesView.xib in Resources */,
+				DAFF33EB161F316E0092D06F /* app_icon_114.png in Resources */,
+				DAFF33ED161F31CF0092D06F /* app_icon_57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
