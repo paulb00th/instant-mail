@@ -11,8 +11,7 @@ Feature:
   @manual
   Scenario: Compose Email
     Given the application is opened after settings have been set
-    Then I should see the email entry screen
-    And the recipient and subject prefix should be entered already
+    Then I should see the email entry screen with the recipient and subject prefix already entered
 
   @manual
   Scenario: Compose Email
