@@ -1,634 +1,1825 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		DA096A75161D86A100185403 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A74161D86A100185403 /* UIKit.framework */; };
-		DA096A77161D86A100185403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A76161D86A100185403 /* Foundation.framework */; };
-		DA096A79161D86A100185403 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A78161D86A100185403 /* CoreGraphics.framework */; };
-		DA096A7F161D86A100185403 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA096A7D161D86A100185403 /* InfoPlist.strings */; };
-		DA096A81161D86A100185403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA096A80161D86A100185403 /* main.m */; };
-		DA096A85161D86A100185403 /* InstantMailAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA096A84161D86A100185403 /* InstantMailAppDelegate.m */; };
-		DA096A87161D86A100185403 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA096A86161D86A100185403 /* Default.png */; };
-		DA096A89161D86A100185403 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA096A88161D86A100185403 /* Default@2x.png */; };
-		DA096A8B161D86A100185403 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA096A8A161D86A100185403 /* Default-568h@2x.png */; };
-		DA096A8E161D86A100185403 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA096A8C161D86A100185403 /* MainStoryboard.storyboard */; };
-		DA096A91161D86A100185403 /* InstantMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA096A90161D86A100185403 /* InstantMailViewController.m */; };
-		DA096A99161D86A100185403 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A98161D86A100185403 /* SenTestingKit.framework */; };
-		DA096A9A161D86A100185403 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A74161D86A100185403 /* UIKit.framework */; };
-		DA096A9B161D86A100185403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA096A76161D86A100185403 /* Foundation.framework */; };
-		DA096AA3161D86A100185403 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA096AA1161D86A100185403 /* InfoPlist.strings */; };
-		DA096AA6161D86A100185403 /* Instant_MailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA096AA5161D86A100185403 /* Instant_MailTests.m */; };
-		DAA3486C161DC248005ED1F8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA3486B161DC248005ED1F8 /* MessageUI.framework */; };
-		DABDF2B9161F00C900200939 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DABDF2B8161F00C900200939 /* Settings.bundle */; };
-		DAFF33D0161F193A0092D06F /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33AA161F193A0092D06F /* IASKAppSettingsViewController.m */; };
-		DAFF33D1161F193A0092D06F /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33AC161F193A0092D06F /* IASKAppSettingsWebViewController.m */; };
-		DAFF33D2161F193A0092D06F /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33AE161F193A0092D06F /* IASKSpecifierValuesViewController.m */; };
-		DAFF33D3161F193A0092D06F /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33B1161F193A0092D06F /* IASKSettingsReader.m */; };
-		DAFF33D4161F193A0092D06F /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33B3161F193A0092D06F /* IASKSettingsStore.m */; };
-		DAFF33D5161F193A0092D06F /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33B5161F193A0092D06F /* IASKSettingsStoreFile.m */; };
-		DAFF33D6161F193A0092D06F /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33B7161F193A0092D06F /* IASKSettingsStoreUserDefaults.m */; };
-		DAFF33D7161F193A0092D06F /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33B9161F193A0092D06F /* IASKSpecifier.m */; };
-		DAFF33D8161F193A0092D06F /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33BC161F193A0092D06F /* IASKPSSliderSpecifierViewCell.m */; };
-		DAFF33D9161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33BE161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.m */; };
-		DAFF33DA161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33C0161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.m */; };
-		DAFF33DB161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33C2161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.m */; };
-		DAFF33DC161F193A0092D06F /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33C4161F193A0092D06F /* IASKSlider.m */; };
-		DAFF33DD161F193A0092D06F /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33C6161F193A0092D06F /* IASKSwitch.m */; };
-		DAFF33DE161F193A0092D06F /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF33C8161F193A0092D06F /* IASKTextField.m */; };
-		DAFF33DF161F193A0092D06F /* IASKAppSettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CA161F193A0092D06F /* IASKAppSettingsView.xib */; };
-		DAFF33E0161F193A0092D06F /* IASKAppSettingsWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CB161F193A0092D06F /* IASKAppSettingsWebView.xib */; };
-		DAFF33E1161F193A0092D06F /* IASKPSSliderSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CC161F193A0092D06F /* IASKPSSliderSpecifierViewCell.xib */; };
-		DAFF33E2161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib */; };
-		DAFF33E3161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CE161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib */; };
-		DAFF33E4161F193A0092D06F /* IASKSpecifierValuesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33CF161F193A0092D06F /* IASKSpecifierValuesView.xib */; };
-		DAFF33EB161F316E0092D06F /* app_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33EA161F316E0092D06F /* app_icon_114.png */; };
-		DAFF33ED161F31CF0092D06F /* app_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFF33EC161F31CF0092D06F /* app_icon_57.png */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DA096A9C161D86A100185403 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA096A67161D86A100185403 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA096A6F161D86A100185403;
-			remoteInfo = "Instant Mail";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		DA096A70161D86A100185403 /* Instant Mail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instant Mail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA096A74161D86A100185403 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DA096A76161D86A100185403 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DA096A78161D86A100185403 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DA096A7C161D86A100185403 /* Instant Mail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Instant Mail-Info.plist"; sourceTree = "<group>"; };
-		DA096A7E161D86A100185403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA096A80161D86A100185403 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA096A82161D86A100185403 /* Instant Mail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instant Mail-Prefix.pch"; sourceTree = "<group>"; };
-		DA096A83161D86A100185403 /* InstantMailAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantMailAppDelegate.h; sourceTree = "<group>"; };
-		DA096A84161D86A100185403 /* InstantMailAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstantMailAppDelegate.m; sourceTree = "<group>"; };
-		DA096A86161D86A100185403 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DA096A88161D86A100185403 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DA096A8A161D86A100185403 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DA096A8D161D86A100185403 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DA096A8F161D86A100185403 /* InstantMailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstantMailViewController.h; sourceTree = "<group>"; };
-		DA096A90161D86A100185403 /* InstantMailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstantMailViewController.m; sourceTree = "<group>"; };
-		DA096A97161D86A100185403 /* Instant MailTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instant MailTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA096A98161D86A100185403 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DA096AA0161D86A100185403 /* Instant MailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Instant MailTests-Info.plist"; sourceTree = "<group>"; };
-		DA096AA2161D86A100185403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA096AA4161D86A100185403 /* Instant_MailTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Instant_MailTests.h; sourceTree = "<group>"; };
-		DA096AA5161D86A100185403 /* Instant_MailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Instant_MailTests.m; sourceTree = "<group>"; };
-		DAA3486B161DC248005ED1F8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		DABDF2B8161F00C900200939 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		DAFF33A9161F193A0092D06F /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsViewController.h; sourceTree = "<group>"; };
-		DAFF33AA161F193A0092D06F /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsViewController.m; sourceTree = "<group>"; };
-		DAFF33AB161F193A0092D06F /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
-		DAFF33AC161F193A0092D06F /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
-		DAFF33AD161F193A0092D06F /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
-		DAFF33AE161F193A0092D06F /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
-		DAFF33B0161F193A0092D06F /* IASKSettingsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsReader.h; sourceTree = "<group>"; };
-		DAFF33B1161F193A0092D06F /* IASKSettingsReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsReader.m; sourceTree = "<group>"; };
-		DAFF33B2161F193A0092D06F /* IASKSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStore.h; sourceTree = "<group>"; };
-		DAFF33B3161F193A0092D06F /* IASKSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStore.m; sourceTree = "<group>"; };
-		DAFF33B4161F193A0092D06F /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreFile.h; sourceTree = "<group>"; };
-		DAFF33B5161F193A0092D06F /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreFile.m; sourceTree = "<group>"; };
-		DAFF33B6161F193A0092D06F /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
-		DAFF33B7161F193A0092D06F /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
-		DAFF33B8161F193A0092D06F /* IASKSpecifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSpecifier.h; sourceTree = "<group>"; };
-		DAFF33B9161F193A0092D06F /* IASKSpecifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSpecifier.m; sourceTree = "<group>"; };
-		DAFF33BB161F193A0092D06F /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
-		DAFF33BC161F193A0092D06F /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
-		DAFF33BD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
-		DAFF33BE161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
-		DAFF33BF161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSTitleValueSpecifierViewCell.h; sourceTree = "<group>"; };
-		DAFF33C0161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSTitleValueSpecifierViewCell.m; sourceTree = "<group>"; };
-		DAFF33C1161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKPSToggleSwitchSpecifierViewCell.h; sourceTree = "<group>"; };
-		DAFF33C2161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKPSToggleSwitchSpecifierViewCell.m; sourceTree = "<group>"; };
-		DAFF33C3161F193A0092D06F /* IASKSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSlider.h; sourceTree = "<group>"; };
-		DAFF33C4161F193A0092D06F /* IASKSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSlider.m; sourceTree = "<group>"; };
-		DAFF33C5161F193A0092D06F /* IASKSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKSwitch.h; sourceTree = "<group>"; };
-		DAFF33C6161F193A0092D06F /* IASKSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKSwitch.m; sourceTree = "<group>"; };
-		DAFF33C7161F193A0092D06F /* IASKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASKTextField.h; sourceTree = "<group>"; };
-		DAFF33C8161F193A0092D06F /* IASKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASKTextField.m; sourceTree = "<group>"; };
-		DAFF33CA161F193A0092D06F /* IASKAppSettingsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKAppSettingsView.xib; sourceTree = "<group>"; };
-		DAFF33CB161F193A0092D06F /* IASKAppSettingsWebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKAppSettingsWebView.xib; sourceTree = "<group>"; };
-		DAFF33CC161F193A0092D06F /* IASKPSSliderSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSSliderSpecifierViewCell.xib; sourceTree = "<group>"; };
-		DAFF33CD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSTextFieldSpecifierViewCell.xib; sourceTree = "<group>"; };
-		DAFF33CE161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKPSToggleSwitchSpecifierViewCell.xib; sourceTree = "<group>"; };
-		DAFF33CF161F193A0092D06F /* IASKSpecifierValuesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IASKSpecifierValuesView.xib; sourceTree = "<group>"; };
-		DAFF33EA161F316E0092D06F /* app_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_114.png; sourceTree = "<group>"; };
-		DAFF33EC161F31CF0092D06F /* app_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon_57.png; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		DA096A6D161D86A100185403 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAA3486C161DC248005ED1F8 /* MessageUI.framework in Frameworks */,
-				DA096A75161D86A100185403 /* UIKit.framework in Frameworks */,
-				DA096A77161D86A100185403 /* Foundation.framework in Frameworks */,
-				DA096A79161D86A100185403 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA096A93161D86A100185403 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA096A99161D86A100185403 /* SenTestingKit.framework in Frameworks */,
-				DA096A9A161D86A100185403 /* UIKit.framework in Frameworks */,
-				DA096A9B161D86A100185403 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		DA096A65161D86A100185403 = {
-			isa = PBXGroup;
-			children = (
-				DAFF33EC161F31CF0092D06F /* app_icon_57.png */,
-				DAFF33EA161F316E0092D06F /* app_icon_114.png */,
-				DAA3486B161DC248005ED1F8 /* MessageUI.framework */,
-				DA096A7A161D86A100185403 /* Instant Mail */,
-				DA096A9E161D86A100185403 /* Instant MailTests */,
-				DA096A73161D86A100185403 /* Frameworks */,
-				DA096A71161D86A100185403 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		DA096A71161D86A100185403 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA096A70161D86A100185403 /* Instant Mail.app */,
-				DA096A97161D86A100185403 /* Instant MailTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DA096A73161D86A100185403 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DA096A74161D86A100185403 /* UIKit.framework */,
-				DA096A76161D86A100185403 /* Foundation.framework */,
-				DA096A78161D86A100185403 /* CoreGraphics.framework */,
-				DA096A98161D86A100185403 /* SenTestingKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA096A7A161D86A100185403 /* Instant Mail */ = {
-			isa = PBXGroup;
-			children = (
-				DA096A83161D86A100185403 /* InstantMailAppDelegate.h */,
-				DA096A84161D86A100185403 /* InstantMailAppDelegate.m */,
-				DA096A8C161D86A100185403 /* MainStoryboard.storyboard */,
-				DABDF2B8161F00C900200939 /* Settings.bundle */,
-				DA096A8F161D86A100185403 /* InstantMailViewController.h */,
-				DA096A90161D86A100185403 /* InstantMailViewController.m */,
-				DAFF33A7161F193A0092D06F /* InAppSettingsKit */,
-				DA096A7B161D86A100185403 /* Supporting Files */,
-			);
-			path = "Instant Mail";
-			sourceTree = "<group>";
-		};
-		DA096A7B161D86A100185403 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DA096A7C161D86A100185403 /* Instant Mail-Info.plist */,
-				DA096A7D161D86A100185403 /* InfoPlist.strings */,
-				DA096A80161D86A100185403 /* main.m */,
-				DA096A82161D86A100185403 /* Instant Mail-Prefix.pch */,
-				DA096A86161D86A100185403 /* Default.png */,
-				DA096A88161D86A100185403 /* Default@2x.png */,
-				DA096A8A161D86A100185403 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DA096A9E161D86A100185403 /* Instant MailTests */ = {
-			isa = PBXGroup;
-			children = (
-				DA096AA4161D86A100185403 /* Instant_MailTests.h */,
-				DA096AA5161D86A100185403 /* Instant_MailTests.m */,
-				DA096A9F161D86A100185403 /* Supporting Files */,
-			);
-			path = "Instant MailTests";
-			sourceTree = "<group>";
-		};
-		DA096A9F161D86A100185403 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DA096AA0161D86A100185403 /* Instant MailTests-Info.plist */,
-				DA096AA1161D86A100185403 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DAFF33A7161F193A0092D06F /* InAppSettingsKit */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF33A8161F193A0092D06F /* Controllers */,
-				DAFF33AF161F193A0092D06F /* Models */,
-				DAFF33BA161F193A0092D06F /* Views */,
-				DAFF33C9161F193A0092D06F /* Xibs */,
-			);
-			path = InAppSettingsKit;
-			sourceTree = SOURCE_ROOT;
-		};
-		DAFF33A8161F193A0092D06F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF33A9161F193A0092D06F /* IASKAppSettingsViewController.h */,
-				DAFF33AA161F193A0092D06F /* IASKAppSettingsViewController.m */,
-				DAFF33AB161F193A0092D06F /* IASKAppSettingsWebViewController.h */,
-				DAFF33AC161F193A0092D06F /* IASKAppSettingsWebViewController.m */,
-				DAFF33AD161F193A0092D06F /* IASKSpecifierValuesViewController.h */,
-				DAFF33AE161F193A0092D06F /* IASKSpecifierValuesViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DAFF33AF161F193A0092D06F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF33B0161F193A0092D06F /* IASKSettingsReader.h */,
-				DAFF33B1161F193A0092D06F /* IASKSettingsReader.m */,
-				DAFF33B2161F193A0092D06F /* IASKSettingsStore.h */,
-				DAFF33B3161F193A0092D06F /* IASKSettingsStore.m */,
-				DAFF33B4161F193A0092D06F /* IASKSettingsStoreFile.h */,
-				DAFF33B5161F193A0092D06F /* IASKSettingsStoreFile.m */,
-				DAFF33B6161F193A0092D06F /* IASKSettingsStoreUserDefaults.h */,
-				DAFF33B7161F193A0092D06F /* IASKSettingsStoreUserDefaults.m */,
-				DAFF33B8161F193A0092D06F /* IASKSpecifier.h */,
-				DAFF33B9161F193A0092D06F /* IASKSpecifier.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DAFF33BA161F193A0092D06F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF33BB161F193A0092D06F /* IASKPSSliderSpecifierViewCell.h */,
-				DAFF33BC161F193A0092D06F /* IASKPSSliderSpecifierViewCell.m */,
-				DAFF33BD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.h */,
-				DAFF33BE161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.m */,
-				DAFF33BF161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.h */,
-				DAFF33C0161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.m */,
-				DAFF33C1161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.h */,
-				DAFF33C2161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.m */,
-				DAFF33C3161F193A0092D06F /* IASKSlider.h */,
-				DAFF33C4161F193A0092D06F /* IASKSlider.m */,
-				DAFF33C5161F193A0092D06F /* IASKSwitch.h */,
-				DAFF33C6161F193A0092D06F /* IASKSwitch.m */,
-				DAFF33C7161F193A0092D06F /* IASKTextField.h */,
-				DAFF33C8161F193A0092D06F /* IASKTextField.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DAFF33C9161F193A0092D06F /* Xibs */ = {
-			isa = PBXGroup;
-			children = (
-				DAFF33CA161F193A0092D06F /* IASKAppSettingsView.xib */,
-				DAFF33CB161F193A0092D06F /* IASKAppSettingsWebView.xib */,
-				DAFF33CC161F193A0092D06F /* IASKPSSliderSpecifierViewCell.xib */,
-				DAFF33CD161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib */,
-				DAFF33CE161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib */,
-				DAFF33CF161F193A0092D06F /* IASKSpecifierValuesView.xib */,
-			);
-			path = Xibs;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		DA096A6F161D86A100185403 /* Instant Mail */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA096AA9161D86A100185403 /* Build configuration list for PBXNativeTarget "Instant Mail" */;
-			buildPhases = (
-				DA096A6C161D86A100185403 /* Sources */,
-				DA096A6D161D86A100185403 /* Frameworks */,
-				DA096A6E161D86A100185403 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Instant Mail";
-			productName = "Instant Mail";
-			productReference = DA096A70161D86A100185403 /* Instant Mail.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DA096A96161D86A100185403 /* Instant MailTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DA096AAC161D86A100185403 /* Build configuration list for PBXNativeTarget "Instant MailTests" */;
-			buildPhases = (
-				DA096A92161D86A100185403 /* Sources */,
-				DA096A93161D86A100185403 /* Frameworks */,
-				DA096A94161D86A100185403 /* Resources */,
-				DA096A95161D86A100185403 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DA096A9D161D86A100185403 /* PBXTargetDependency */,
-			);
-			name = "Instant MailTests";
-			productName = "Instant MailTests";
-			productReference = DA096A97161D86A100185403 /* Instant MailTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		DA096A67161D86A100185403 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = InstantMail;
-				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Paul Booth";
-			};
-			buildConfigurationList = DA096A6A161D86A100185403 /* Build configuration list for PBXProject "Instant Mail" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = DA096A65161D86A100185403;
-			productRefGroup = DA096A71161D86A100185403 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DA096A6F161D86A100185403 /* Instant Mail */,
-				DA096A96161D86A100185403 /* Instant MailTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		DA096A6E161D86A100185403 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA096A7F161D86A100185403 /* InfoPlist.strings in Resources */,
-				DA096A87161D86A100185403 /* Default.png in Resources */,
-				DA096A89161D86A100185403 /* Default@2x.png in Resources */,
-				DA096A8B161D86A100185403 /* Default-568h@2x.png in Resources */,
-				DA096A8E161D86A100185403 /* MainStoryboard.storyboard in Resources */,
-				DABDF2B9161F00C900200939 /* Settings.bundle in Resources */,
-				DAFF33DF161F193A0092D06F /* IASKAppSettingsView.xib in Resources */,
-				DAFF33E0161F193A0092D06F /* IASKAppSettingsWebView.xib in Resources */,
-				DAFF33E1161F193A0092D06F /* IASKPSSliderSpecifierViewCell.xib in Resources */,
-				DAFF33E2161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.xib in Resources */,
-				DAFF33E3161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.xib in Resources */,
-				DAFF33E4161F193A0092D06F /* IASKSpecifierValuesView.xib in Resources */,
-				DAFF33EB161F316E0092D06F /* app_icon_114.png in Resources */,
-				DAFF33ED161F31CF0092D06F /* app_icon_57.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA096A94161D86A100185403 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA096AA3161D86A100185403 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		DA096A95161D86A100185403 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DA096A6C161D86A100185403 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA096A81161D86A100185403 /* main.m in Sources */,
-				DA096A85161D86A100185403 /* InstantMailAppDelegate.m in Sources */,
-				DA096A91161D86A100185403 /* InstantMailViewController.m in Sources */,
-				DAFF33D0161F193A0092D06F /* IASKAppSettingsViewController.m in Sources */,
-				DAFF33D1161F193A0092D06F /* IASKAppSettingsWebViewController.m in Sources */,
-				DAFF33D2161F193A0092D06F /* IASKSpecifierValuesViewController.m in Sources */,
-				DAFF33D3161F193A0092D06F /* IASKSettingsReader.m in Sources */,
-				DAFF33D4161F193A0092D06F /* IASKSettingsStore.m in Sources */,
-				DAFF33D5161F193A0092D06F /* IASKSettingsStoreFile.m in Sources */,
-				DAFF33D6161F193A0092D06F /* IASKSettingsStoreUserDefaults.m in Sources */,
-				DAFF33D7161F193A0092D06F /* IASKSpecifier.m in Sources */,
-				DAFF33D8161F193A0092D06F /* IASKPSSliderSpecifierViewCell.m in Sources */,
-				DAFF33D9161F193A0092D06F /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
-				DAFF33DA161F193A0092D06F /* IASKPSTitleValueSpecifierViewCell.m in Sources */,
-				DAFF33DB161F193A0092D06F /* IASKPSToggleSwitchSpecifierViewCell.m in Sources */,
-				DAFF33DC161F193A0092D06F /* IASKSlider.m in Sources */,
-				DAFF33DD161F193A0092D06F /* IASKSwitch.m in Sources */,
-				DAFF33DE161F193A0092D06F /* IASKTextField.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DA096A92161D86A100185403 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DA096AA6161D86A100185403 /* Instant_MailTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DA096A9D161D86A100185403 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA096A6F161D86A100185403 /* Instant Mail */;
-			targetProxy = DA096A9C161D86A100185403 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DA096A7D161D86A100185403 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA096A7E161D86A100185403 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DA096A8C161D86A100185403 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA096A8D161D86A100185403 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		DA096AA1161D86A100185403 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA096AA2161D86A100185403 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		DA096AA7161D86A100185403 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		DA096AA8161D86A100185403 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DA096AAA161D86A100185403 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Instant Mail/Instant Mail-Prefix.pch";
-				INFOPLIST_FILE = "Instant Mail/Instant Mail-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		DA096AAB161D86A100185403 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Instant Mail/Instant Mail-Prefix.pch";
-				INFOPLIST_FILE = "Instant Mail/Instant Mail-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		DA096AAD161D86A100185403 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Instant Mail.app/Instant Mail";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Instant Mail/Instant Mail-Prefix.pch";
-				INFOPLIST_FILE = "Instant MailTests/Instant MailTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		DA096AAE161D86A100185403 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Instant Mail.app/Instant Mail";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Instant Mail/Instant Mail-Prefix.pch";
-				INFOPLIST_FILE = "Instant MailTests/Instant MailTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		DA096A6A161D86A100185403 /* Build configuration list for PBXProject "Instant Mail" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA096AA7161D86A100185403 /* Debug */,
-				DA096AA8161D86A100185403 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA096AA9161D86A100185403 /* Build configuration list for PBXNativeTarget "Instant Mail" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA096AAA161D86A100185403 /* Debug */,
-				DA096AAB161D86A100185403 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DA096AAC161D86A100185403 /* Build configuration list for PBXNativeTarget "Instant MailTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA096AAD161D86A100185403 /* Debug */,
-				DA096AAE161D86A100185403 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = DA096A67161D86A100185403 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>DA096A65161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DAFF33EC161F31CF0092D06F</string>
+				<string>DAFF33EA161F316E0092D06F</string>
+				<string>DAA3486B161DC248005ED1F8</string>
+				<string>DA096A7A161D86A100185403</string>
+				<string>DA096A9E161D86A100185403</string>
+				<string>DA096A73161D86A100185403</string>
+				<string>DA096A71161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A67161D86A100185403</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>InstantMail</string>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Paul Booth</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>DA096A6A161D86A100185403</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>DA096A65161D86A100185403</string>
+			<key>productRefGroup</key>
+			<string>DA096A71161D86A100185403</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>DA096A6F161D86A100185403</string>
+				<string>DA096A96161D86A100185403</string>
+			</array>
+		</dict>
+		<key>DA096A6A161D86A100185403</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DA096AA7161D86A100185403</string>
+				<string>DA096AA8161D86A100185403</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DA096A6C161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DA096A81161D86A100185403</string>
+				<string>DA096A85161D86A100185403</string>
+				<string>DA096A91161D86A100185403</string>
+				<string>DAFF33D0161F193A0092D06F</string>
+				<string>DAFF33D1161F193A0092D06F</string>
+				<string>DAFF33D2161F193A0092D06F</string>
+				<string>DAFF33D3161F193A0092D06F</string>
+				<string>DAFF33D4161F193A0092D06F</string>
+				<string>DAFF33D5161F193A0092D06F</string>
+				<string>DAFF33D6161F193A0092D06F</string>
+				<string>DAFF33D7161F193A0092D06F</string>
+				<string>DAFF33D8161F193A0092D06F</string>
+				<string>DAFF33D9161F193A0092D06F</string>
+				<string>DAFF33DA161F193A0092D06F</string>
+				<string>DAFF33DB161F193A0092D06F</string>
+				<string>DAFF33DC161F193A0092D06F</string>
+				<string>DAFF33DD161F193A0092D06F</string>
+				<string>DAFF33DE161F193A0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DA096A6D161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DAA3486C161DC248005ED1F8</string>
+				<string>DA096A75161D86A100185403</string>
+				<string>DA096A77161D86A100185403</string>
+				<string>DA096A79161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DA096A6E161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DA096A7F161D86A100185403</string>
+				<string>DA096A87161D86A100185403</string>
+				<string>DA096A89161D86A100185403</string>
+				<string>DA096A8B161D86A100185403</string>
+				<string>DA096A8E161D86A100185403</string>
+				<string>DABDF2B9161F00C900200939</string>
+				<string>DAFF33DF161F193A0092D06F</string>
+				<string>DAFF33E0161F193A0092D06F</string>
+				<string>DAFF33E1161F193A0092D06F</string>
+				<string>DAFF33E2161F193A0092D06F</string>
+				<string>DAFF33E3161F193A0092D06F</string>
+				<string>DAFF33E4161F193A0092D06F</string>
+				<string>DAFF33EB161F316E0092D06F</string>
+				<string>DAFF33ED161F31CF0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DA096A6F161D86A100185403</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DA096AA9161D86A100185403</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DA096A6C161D86A100185403</string>
+				<string>DA096A6D161D86A100185403</string>
+				<string>DA096A6E161D86A100185403</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Instant Mail</string>
+			<key>productName</key>
+			<string>Instant Mail</string>
+			<key>productReference</key>
+			<string>DA096A70161D86A100185403</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>DA096A70161D86A100185403</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Instant Mail.app</string>
+			<key>path</key>
+			<string>Instant Mail.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DA096A71161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096A70161D86A100185403</string>
+				<string>DA096A97161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A73161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096A74161D86A100185403</string>
+				<string>DA096A76161D86A100185403</string>
+				<string>DA096A78161D86A100185403</string>
+				<string>DA096A98161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A74161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DA096A75161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A74161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A76161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DA096A77161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A76161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A78161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DA096A79161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A78161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A7A161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096A83161D86A100185403</string>
+				<string>DA096A84161D86A100185403</string>
+				<string>DA096A8C161D86A100185403</string>
+				<string>DABDF2B8161F00C900200939</string>
+				<string>DA096A8F161D86A100185403</string>
+				<string>DA096A90161D86A100185403</string>
+				<string>DAFF33A7161F193A0092D06F</string>
+				<string>DA096A7B161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Instant Mail</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A7B161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096A7C161D86A100185403</string>
+				<string>DA096A7D161D86A100185403</string>
+				<string>DA096A80161D86A100185403</string>
+				<string>DA096A82161D86A100185403</string>
+				<string>DA096A86161D86A100185403</string>
+				<string>DA096A88161D86A100185403</string>
+				<string>DA096A8A161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A7C161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Instant Mail-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A7D161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096A7E161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A7E161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A7F161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A7D161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A80161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A81161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A80161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A82161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Instant Mail-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A83161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>InstantMailAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A84161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>InstantMailAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A85161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A84161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A86161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A87161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A86161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A88161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A89161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A88161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A8A161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A8B161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A8A161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A8C161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096A8D161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>MainStoryboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A8D161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/MainStoryboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A8E161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A8C161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A8F161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>InstantMailViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A90161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>InstantMailViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A91161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A90161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A92161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DA096AA6161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DA096A93161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DA096A99161D86A100185403</string>
+				<string>DA096A9A161D86A100185403</string>
+				<string>DA096A9B161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DA096A94161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DA096AA3161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DA096A95161D86A100185403</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>DA096A96161D86A100185403</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DA096AAC161D86A100185403</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DA096A92161D86A100185403</string>
+				<string>DA096A93161D86A100185403</string>
+				<string>DA096A94161D86A100185403</string>
+				<string>DA096A95161D86A100185403</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>DA096A9D161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Instant MailTests</string>
+			<key>productName</key>
+			<string>Instant MailTests</string>
+			<key>productReference</key>
+			<string>DA096A97161D86A100185403</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>DA096A97161D86A100185403</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Instant MailTests.octest</string>
+			<key>path</key>
+			<string>Instant MailTests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DA096A98161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>DA096A99161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A98161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A9A161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A74161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A9B161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096A76161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096A9C161D86A100185403</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>DA096A67161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>DA096A6F161D86A100185403</string>
+			<key>remoteInfo</key>
+			<string>Instant Mail</string>
+		</dict>
+		<key>DA096A9D161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>DA096A6F161D86A100185403</string>
+			<key>targetProxy</key>
+			<string>DA096A9C161D86A100185403</string>
+		</dict>
+		<key>DA096A9E161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096AA4161D86A100185403</string>
+				<string>DA096AA5161D86A100185403</string>
+				<string>DA096A9F161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Instant MailTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096A9F161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096AA0161D86A100185403</string>
+				<string>DA096AA1161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096AA0161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Instant MailTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096AA1161D86A100185403</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DA096AA2161D86A100185403</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096AA2161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096AA3161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096AA1161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096AA4161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Instant_MailTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096AA5161D86A100185403</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Instant_MailTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA096AA6161D86A100185403</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA096AA5161D86A100185403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA096AA7161D86A100185403</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DA096AA8161D86A100185403</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DA096AA9161D86A100185403</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DA096AAA161D86A100185403</string>
+				<string>DA096AAB161D86A100185403</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DA096AAA161D86A100185403</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Instant Mail/Instant Mail-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Instant Mail/Instant Mail-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(FRANK_LIBRARY_SEARCH_PATHS)</string>
+				</array>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(FRANK_LDFLAGS)</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DA096AAB161D86A100185403</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Instant Mail/Instant Mail-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Instant Mail/Instant Mail-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DA096AAC161D86A100185403</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DA096AAD161D86A100185403</string>
+				<string>DA096AAE161D86A100185403</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DA096AAD161D86A100185403</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Instant Mail.app/Instant Mail</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Instant Mail/Instant Mail-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Instant MailTests/Instant MailTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DA096AAE161D86A100185403</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Instant Mail.app/Instant Mail</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Instant Mail/Instant Mail-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Instant MailTests/Instant MailTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DAA3486B161DC248005ED1F8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MessageUI.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MessageUI.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DAA3486C161DC248005ED1F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAA3486B161DC248005ED1F8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DABDF2B8161F00C900200939</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>path</key>
+			<string>Settings.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DABDF2B9161F00C900200939</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DABDF2B8161F00C900200939</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33A7161F193A0092D06F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DAFF33A8161F193A0092D06F</string>
+				<string>DAFF33AF161F193A0092D06F</string>
+				<string>DAFF33BA161F193A0092D06F</string>
+				<string>DAFF33C9161F193A0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>InAppSettingsKit</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>DAFF33A8161F193A0092D06F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DAFF33A9161F193A0092D06F</string>
+				<string>DAFF33AA161F193A0092D06F</string>
+				<string>DAFF33AB161F193A0092D06F</string>
+				<string>DAFF33AC161F193A0092D06F</string>
+				<string>DAFF33AD161F193A0092D06F</string>
+				<string>DAFF33AE161F193A0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Controllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33A9161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKAppSettingsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33AA161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKAppSettingsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33AB161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKAppSettingsWebViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33AC161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKAppSettingsWebViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33AD161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSpecifierValuesViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33AE161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSpecifierValuesViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33AF161F193A0092D06F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DAFF33B0161F193A0092D06F</string>
+				<string>DAFF33B1161F193A0092D06F</string>
+				<string>DAFF33B2161F193A0092D06F</string>
+				<string>DAFF33B3161F193A0092D06F</string>
+				<string>DAFF33B4161F193A0092D06F</string>
+				<string>DAFF33B5161F193A0092D06F</string>
+				<string>DAFF33B6161F193A0092D06F</string>
+				<string>DAFF33B7161F193A0092D06F</string>
+				<string>DAFF33B8161F193A0092D06F</string>
+				<string>DAFF33B9161F193A0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B0161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSettingsReader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B1161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSettingsReader.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B2161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSettingsStore.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B3161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSettingsStore.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B4161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSettingsStoreFile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B5161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSettingsStoreFile.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B6161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSettingsStoreUserDefaults.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B7161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSettingsStoreUserDefaults.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B8161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSpecifier.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33B9161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSpecifier.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33BA161F193A0092D06F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DAFF33BB161F193A0092D06F</string>
+				<string>DAFF33BC161F193A0092D06F</string>
+				<string>DAFF33BD161F193A0092D06F</string>
+				<string>DAFF33BE161F193A0092D06F</string>
+				<string>DAFF33BF161F193A0092D06F</string>
+				<string>DAFF33C0161F193A0092D06F</string>
+				<string>DAFF33C1161F193A0092D06F</string>
+				<string>DAFF33C2161F193A0092D06F</string>
+				<string>DAFF33C3161F193A0092D06F</string>
+				<string>DAFF33C4161F193A0092D06F</string>
+				<string>DAFF33C5161F193A0092D06F</string>
+				<string>DAFF33C6161F193A0092D06F</string>
+				<string>DAFF33C7161F193A0092D06F</string>
+				<string>DAFF33C8161F193A0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33BB161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKPSSliderSpecifierViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33BC161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKPSSliderSpecifierViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33BD161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKPSTextFieldSpecifierViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33BE161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKPSTextFieldSpecifierViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33BF161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKPSTitleValueSpecifierViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C0161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKPSTitleValueSpecifierViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C1161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKPSToggleSwitchSpecifierViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C2161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKPSToggleSwitchSpecifierViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C3161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSlider.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C4161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSlider.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C5161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKSwitch.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C6161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKSwitch.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C7161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>IASKTextField.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C8161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>IASKTextField.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33C9161F193A0092D06F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DAFF33CA161F193A0092D06F</string>
+				<string>DAFF33CB161F193A0092D06F</string>
+				<string>DAFF33CC161F193A0092D06F</string>
+				<string>DAFF33CD161F193A0092D06F</string>
+				<string>DAFF33CE161F193A0092D06F</string>
+				<string>DAFF33CF161F193A0092D06F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Xibs</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33CA161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>IASKAppSettingsView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33CB161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>IASKAppSettingsWebView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33CC161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>IASKPSSliderSpecifierViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33CD161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>IASKPSTextFieldSpecifierViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33CE161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>IASKPSToggleSwitchSpecifierViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33CF161F193A0092D06F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>IASKSpecifierValuesView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33D0161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33AA161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D1161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33AC161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D2161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33AE161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D3161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33B1161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D4161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33B3161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D5161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33B5161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D6161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33B7161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D7161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33B9161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D8161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33BC161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33D9161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33BE161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33DA161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33C0161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33DB161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33C2161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33DC161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33C4161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33DD161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33C6161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33DE161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33C8161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33DF161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33CA161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33E0161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33CB161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33E1161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33CC161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33E2161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33CD161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33E3161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33CE161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33E4161F193A0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33CF161F193A0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33EA161F316E0092D06F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>app_icon_114.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33EB161F316E0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33EA161F316E0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DAFF33EC161F31CF0092D06F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>app_icon_57.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DAFF33ED161F31CF0092D06F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DAFF33EC161F31CF0092D06F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>DA096A67161D86A100185403</string>
+</dict>
+</plist>
