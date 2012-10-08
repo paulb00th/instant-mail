@@ -7,7 +7,7 @@ which runs in a separate process. See http://oleb.net/blog/2012/10/remote-view-c
 
 ## Functional Tests
 
-Functional tests are located in [instant-mail/Frank/features](instant-mail/Frank/features)
+Functional tests are located in [Frank/features](instant-mail/tree/master/Frank/features)
     
 ## License
 
